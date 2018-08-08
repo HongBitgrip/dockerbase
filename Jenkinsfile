@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     def image = docker.build('centos7', '--pull ./base/centos')
-                    docker.withRegistry('http://5.189.132.250:8083') {
+                    docker.withRegistry('http://5.189.132.250:8083', 'admin') {
                         image.push()
                     }
                 }
