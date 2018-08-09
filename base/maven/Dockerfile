@@ -1,5 +1,5 @@
-FROM 5.189.132.250:8083/centos7
-RUN yum install -y java-1.8.0-openjdk-devel
+FROM 5.189.132.250:8083/java-openjdk8
+
 ARG MAVEN_VERSION=3.5.4
 ARG USER_HOME_DIR="/root"
 ARG SHA=ce50b1c91364cb77efe3776f756a6d92b76d9038b0a0782f7d53acf1e997a14d
@@ -15,8 +15,8 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
-COPY maven/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
-COPY maven/settings-docker.xml /usr/share/maven/ref/
+COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
+COPY settings-docker.xml /usr/share/maven/ref/
 
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
 CMD ["mvn"]
