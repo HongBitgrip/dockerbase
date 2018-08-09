@@ -37,5 +37,15 @@ pipeline {
                 }
             }        
         }
+        stage('cm9-base-image') {
+            steps {
+                script {
+                    def image = docker.build('cm9-base', '--pull ./base/sencha')
+                    docker.withRegistry('http://5.189.132.250:8083', 'nexus-admin') {
+                        image.push()
+                    }
+                }
+            }        
+        }
     }
 }    
