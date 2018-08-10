@@ -1,7 +1,7 @@
 FROM 5.189.132.250:8083/java-openjdk8
 
 ARG MAVEN_VERSION=3.5.4
-ARG USER_HOME_DIR="/root"
+ARG USER_HOME_DIR="/tmp"
 ARG SHA=ce50b1c91364cb77efe3776f756a6d92b76d9038b0a0782f7d53acf1e997a14d
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
@@ -23,4 +23,3 @@ COPY settings-docker.xml /usr/share/maven/ref/
 
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
 CMD ["mvn"]
-
