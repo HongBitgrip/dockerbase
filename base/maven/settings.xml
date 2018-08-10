@@ -7,12 +7,12 @@
     <server>
       <id>coremedia.external.releases</id>
       <username>hong.nguyen@bitgrip.de</username>
-      <password>{4pGu+jyRCzgH6GKemvlAlPWqkJRwYyQwQ2jngRmPLUY=}</password>
+      <password>{WZD1EtR7ry8Hw7JYAuRZo5N7i4kWXz+8E39jK/W3H78=}</password>
     </server>
     <server>
       <id>coremedia.external.livecontext.releases</id>
       <username>hong.nguyen@bitgrip.de</username>
-      <password>{4pGu+jyRCzgH6GKemvlAlPWqkJRwYyQwQ2jngRmPLUY=}</password>
+      <password>{WZD1EtR7ry8Hw7JYAuRZo5N7i4kWXz+8E39jK/W3H78=}</password>
     </server>
   </servers>
 
