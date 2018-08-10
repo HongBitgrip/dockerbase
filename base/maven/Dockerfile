@@ -15,6 +15,7 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 ENV HOME "$USER_HOME_DIR"
+ENV MAVEN_OPTS -Xmx2048m -XX:+UseConcMarkSweepGC -XX:MaxPermSize=1024m -XX:+CMSPermGenSweepingEnabled
 
 COPY mvn /usr/share/maven/bin/mvn
 RUN  chmod +x /usr/share/maven/bin/mvn
