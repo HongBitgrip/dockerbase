@@ -18,7 +18,7 @@ ENV HOME "$USER_HOME_DIR"
 
 COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
 COPY settings.xml /usr/share/maven/ref/
-COPY settings.xml /root/.m2/
+COPY settings-security.xml /usr/share/maven/ref/
 COPY settings-docker.xml /usr/share/maven/ref/
 
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
