@@ -20,3 +20,4 @@ RUN curl -fsSL -o /tmp/SenchaCmd-6.5.3.6-linux-amd64.sh https://mirrors.bitgrip.
   && rm -f /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2
 
 COPY sencha.cfg /usr/local/sencha/cmd/sencha.cfg
+COPY sencha.vmoptions /usr/local/sencha/cmd/sencha.vmoptions
