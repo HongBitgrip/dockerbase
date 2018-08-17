@@ -14,6 +14,11 @@
       <username>hong.nguyen@bitgrip.de</username>
       <password>{O6s79m/LvIAH30bFDpiJVRRjynuI/nR9494F1S/KTtA=}</password>
     </server>
+    <server>
+      <id>docker-private</id>
+      <username>admin</username>
+      <password>{AzAm3zio6QIHDC2D30oX0uT2PFLNaBx8FvmkzC0vjGg=}</password>
+    </server>
   </servers>
 
   <pluginGroups>
