@@ -21,6 +21,15 @@
     </server>
   </servers>
 
+  <mirrors>
+    <mirror>
+        <id>docker-private</id>
+        <name>That the awesome single point of bitgrip snapshot repo</name>
+        <url>http://5.189.132.250:8081/repository/docker-private/</url>
+        <mirrorOf>docker-private</mirrorOf>
+    </mirror>
+  </mirrors>
+
   <pluginGroups>
     <pluginGroup>com.coremedia.maven</pluginGroup>
     <pluginGroup>org.sonatype.plugins</pluginGroup>
